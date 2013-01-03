@@ -1,0 +1,29 @@
+{
+  "name": "Pixiv Backup",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "The first extension that I made.",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon":   "icon.png"
+  },
+  "permissions": [
+    "http://api.imgur.com/",
+    "https://api.imgur.com/oauth2/authorize",
+    "http://ajax.googleapis.com/",
+    "tabs"
+  ],
+"content_scripts": [{
+        "js": [
+               "jquery.min.js",
+               "jquery-ui.min.js",
+               "auth.js"
+              ],
+        "css": [ "jquery-ui.css" ],
+        "matches": [ "http://similarto-at-include-in-greasemonkey.com/*" ],
+        "run_at": "document_end"
+    }]
+}

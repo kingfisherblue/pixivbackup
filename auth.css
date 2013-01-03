@@ -1,0 +1,31 @@
+#dropzone {
+	height:			200px;
+	width:			200px;
+	border-radius: 	10px;
+	outline-width: 	2px;
+	outline-style: 	dashed;
+	text-align: 	center;
+	display: 		table;
+}
+
+h1 {
+	vertical-align: middle;
+	display: 		table-cell;
+	font-style: 	bold;
+	font-family: 	monospace;
+	font-size: 		18px;
+}
+
+.result {
+	padding:			20px;
+	outline: 			thin black solid;
+	background-color: 	pink;
+	margin:				10px;
+
+}
+
+img {
+	border: 		thick white solid;
+	border-radius: 	5px;
+	margin:	 		5px;
+}

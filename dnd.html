@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- JavaScript and HTML must be in separate files for security. -->
+    <script src="jquery.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="dnd.js"></script>
+    <style>
+      #drop_zone {
+        height:           200px;
+        width:            200px;
+        text-align:       center;
+        background-color: grey;
+        color:            white;
+        border-radius:    15px;
+        opacity:          0.4;
+      }
+
+      #drop_zone:hover {
+        -webkit-transition:   opacity .5s linear;
+        transition:           opacity .5s linear;
+        opacity:              1; 
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <a href="http://25.media.tumblr.com/tumblr_mdhwajzLTA1r7t1i5o1_500.jpg" class="preview"> 
+      <img src="http://25.media.tumblr.com/tumblr_mdhwajzLTA1r7t1i5o1_500.jpg">
+    </a>
+
+    
+    <div id="drop_zone">Drop or paste files here</div>
+    <button id = "upload_btn"> Upload </button> 
+    <output id="list"></output>
+
+      
+  </body>
+</html>
